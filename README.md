@@ -22,4 +22,18 @@
 + 完善社区功能
 + 添加发现功能
 + 添加搜索功能
-+ 完善夜间模式的配色 
++ 完善夜间模式的配色
+
+
+###部分功能截图
+
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_0.png) 
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_1.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_2.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_3.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_4.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_5.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_6.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_7.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_8.png)
+![image](https://github.com/guoxiaojon/FangReader/blob/master/FangReader_pic/reader_9.png)
