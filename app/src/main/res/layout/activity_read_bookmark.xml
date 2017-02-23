@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_read_bottomlist_bookmarklist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_above="@id/ll_read_bottomlist"
+    android:background="@color/black"
+    >
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:id="@+id/tv_read_bottomlist_bookmark_clear"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:drawableStart="@mipmap/ic_menu_clear"
+            android:layout_height="25dp"
+            android:text="清除"/>
+        <TextView
+            android:layout_toStartOf="@id/tv_read_bottomlist_bookmark_clear"
+            android:clickable="true"
+            android:id="@+id/tv_read_bottomlist_bookmark_add"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/ic_menu_add_mark"
+            android:textColor="@color/white"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:text="增加书签"/>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_read_bottomlist_bookmark_list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jon.fangreader.ui.activity.MainActivity">
+    <item
+        android:title="搜索"
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_brown_900_24dp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_cached_black_18dp"
+        android:title="同步图书"
+        app:showAsAction="never" />
+</menu>

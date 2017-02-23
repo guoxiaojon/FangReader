@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/normal_background"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="叮！d=====(￣▽￣*)b 恭喜你发现豪华级书单"
+        android:textColor="@color/first_title"
+        android:textSize="20sp"
+        android:id="@+id/tv_booklistdetail_title"/>
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_booklistdetail_desc"
+        android:layout_below="@id/tv_booklistdetail_title"
+        android:textColor="@color/second_title"
+        android:text="从一堆垃圾中找到的shadkjjk@##4*(**(@^%^(()*(^$%%^^*(*)()(*()()^^%^^@#(**^**"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/avatar_default"
+        android:layout_below="@id/tv_booklistdetail_desc"
+        android:id="@+id/iv_booklistdetail_pic"/>
+
+    <RelativeLayout
+        android:layout_below="@id/tv_booklistdetail_desc"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/iv_booklistdetail_pic"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_coffee"
+            android:text="常山孙三炮"
+            android:id="@+id/tv_booklistdetail_name"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_approve_bg"
+            android:text="分享"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

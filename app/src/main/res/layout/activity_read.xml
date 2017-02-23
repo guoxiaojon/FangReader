@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/fl_readview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/ll_read_toplist"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/reader_menu_bg_color"
+        android:layout_gravity="top">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_read_toplist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"/>
+        <TextView
+            android:id="@+id/tv_read_toplist_reading"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="朗读"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_read_toplist_community"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="社区"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_read_toplist_profile"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="简介"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_read_cacheprogress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在缓存####····"
+        android:gravity="center"
+        android:layout_below="@id/ll_read_toplist"
+        android:background="@color/colorTips"/>
+
+    <include layout="@layout/progress_bar"/>
+
+    <include layout="@layout/activity_read_setting"/>
+
+    <include layout="@layout/activity_read_bookmark" />
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/ll_read_bottomlist"
+        android:visibility="gone"
+        android:background="@color/reader_menu_bg_color"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_read_bottomlist_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableTop="@mipmap/ic_menu_mode_night_normal"
+            android:text="夜间"/>
+
+        <TextView
+            android:id="@+id/tv_read_bottomlist_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableTop="@mipmap/ic_menu_settings_normal"
+            android:text="设置"/>
+
+        <TextView
+            android:id="@+id/tv_read_bottomlist_cache"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableTop="@mipmap/ic_reader_ab_download"
+            android:text="缓存"/>
+
+        <TextView
+            android:id="@+id/tv_read_bottomlist_bookmark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableTop="@mipmap/ic_menu_bookmark"
+            android:text="书签"/>
+
+        <TextView
+            android:id="@+id/tv_read_bottomlist_contents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableTop="@mipmap/ic_menu_toc_normal"
+            android:text="目录"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

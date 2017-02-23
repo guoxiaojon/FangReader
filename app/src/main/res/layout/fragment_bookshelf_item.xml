@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/book_pic"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:text="龙符"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorSecondText"
+            android:id="@+id/tv_description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="2天前:第九百七十五章 无尽之针"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:id="@+id/iv_update"
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/notification_red_dot"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_settop"
+        android:layout_gravity="top"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/label_book_top"/>
+
+</LinearLayout>

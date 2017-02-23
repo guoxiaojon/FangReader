@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bookshelf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include layout="@layout/progress_bar"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/colorTips"
+        android:id="@+id/ll_bookshelf_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/tv_bookshelf_select"
+            android:text="全选"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_bookshelf_delete"
+            android:text="删除"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_bookshelf_tips"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:textColor="@color/colorSecondText"
+        android:text="提示！！！！！！"
+        android:background="@color/colorTips"
+        android:gravity="center"/>
+
+
+</FrameLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_bookdetail_bg"
+    android:background="@color/normal_background"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:id="@+id/iv_bookdetail_pic"
+                android:src="@mipmap/cover_default"/>
+            <TextView
+                android:layout_toRightOf="@id/iv_bookdetail_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="诛仙"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/first_title"
+                android:id="@+id/tv_bookdetail_title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜十三"
+                android:textColor="@color/orange"
+                android:clickable="true"
+                android:layout_toRightOf="@id/iv_bookdetail_pic"
+                android:layout_below="@id/tv_bookdetail_title"
+                android:id="@+id/tv_bookdetail_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | 都市生活 |"
+                android:id="@+id/tv_bookdetail_sort"
+                android:textColor="@color/second_title"
+                android:layout_toRightOf="@id/tv_bookdetail_name"
+                android:layout_below="@id/tv_bookdetail_title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 657万字"
+                android:textColor="@color/second_title"
+                android:id="@+id/tv_bookdetail_wordnum"
+                android:layout_below="@id/tv_bookdetail_title"
+                android:layout_toRightOf="@id/tv_bookdetail_sort"/>
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5天前"
+                android:textColor="@color/second_title"
+                android:id="@+id/tv_bookdetail_time"
+                android:layout_toRightOf="@id/iv_bookdetail_pic"
+                android:layout_below="@id/tv_bookdetail_name"/>
+
+           <LinearLayout
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_below="@id/iv_bookdetail_pic"
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:id="@+id/ll_bookdetail_buttonlayout"
+               android:layout_height="wrap_content">
+
+               <com.example.jon.fangreader.widget.DrawableCenterButton
+                   android:padding="5dp"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_marginEnd="3dp"
+                   android:text="追书"
+                   android:clickable="true"
+                   android:id="@+id/tv_bookdetail_subbutton"
+                   android:drawablePadding="5dp"
+                   android:gravity="center_vertical"
+                   android:drawableLeft="@mipmap/book_detail_info_add_img"
+                   android:background="@drawable/button_bule_bg"
+                   android:textColor="@color/white"/>
+               <com.example.jon.fangreader.widget.DrawableCenterButton
+                   android:drawableLeft="@mipmap/book_detail_info_search_img"
+                   android:padding="5dp"
+                   android:id="@+id/tv_bookdetail_readbutton"
+                   android:drawablePadding="5dp"
+                   android:gravity="center_vertical"
+                   android:layout_marginStart="3dp"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:clickable="true"
+                   android:background="@drawable/button_bule_bg"
+                   android:text="开始阅读"
+                   android:textColor="@color/white"/>
+
+           </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_below="@id/ll_bookdetail_buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/tv_divide_one"
+                android:background="@color/second_background"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ll_bookdetail_detaillayout"
+                android:layout_below="@id/tv_divide_one"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/second_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="追书人数"/>
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/first_title"
+                        android:id="@+id/tv_bookdetail_peoplenum"
+                        android:text="62315"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/second_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="读者存留率"/>
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/first_title"
+                        android:id="@+id/tv_bookdetail_peopleleft"
+                        android:text="50.63%"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/second_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="日更新字数"/>
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/first_title"
+                        android:id="@+id/tv_bookdetail_updatenum"
+                        android:text="162"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_below="@id/ll_bookdetail_detaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/tv_divide_two"
+                android:background="@color/second_background"/>
+
+            <com.example.jon.fangreader.widget.FlowLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tv_divide_two"
+                android:id="@+id/fl_bookdetail_taggroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_below="@id/fl_bookdetail_taggroup"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/tv_divide_three"
+                android:background="@color/second_background"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_divide_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/first_title"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:text=""
+                android:id="@+id/tv_bookdetail_content"/>
+
+
+            <TextView
+                android:id="@+id/tv_divide_four"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv_bookdetail_content"
+                android:layout_height="10dp"
+                android:background="@color/second_background"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/first_title"
+                android:id="@+id/tv_bookdetail_reviewtag"
+                android:layout_below="@id/tv_divide_four"
+                android:text="热门书评"/>
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/second_title"
+                android:text="更多"
+                android:clickable="true"
+                android:id="@+id/tv_bookdetail_morereview"
+                android:layout_below="@id/tv_divide_four"
+                android:layout_alignParentEnd="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tv_bookdetail_reviewtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_bookdetail_reviewcontainer"/>
+
+            <TextView
+                android:id="@+id/tv_divide_five"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/rv_bookdetail_reviewcontainer"
+                android:layout_height="10dp"
+                android:background="@color/second_background"/>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:layout_below="@id/tv_divide_five"
+                android:id="@+id/ll_community"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_bookdetail_community"
+                        android:text="龙符的社区"
+                        android:textColor="@color/first_title"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_bookdetail_numofdiscussion"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/second_title"
+                        android:text="共有3327个帖子"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/game_right_arrow"/>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <TextView
+
+                android:id="@+id/tv_divide_six"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_community"
+                android:layout_height="10dp"
+                android:background="@color/second_background"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_bookdetail_recommendtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/first_title"
+                android:text="推荐书单"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/tv_divide_six"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/rv_bookdetail_recommendbookcontainer"
+                android:layout_below="@id/tv_bookdetail_recommendtag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

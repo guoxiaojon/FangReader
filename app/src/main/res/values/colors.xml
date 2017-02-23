@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c97e3d</color>
+    <color name="colorPrimaryDark">#a75f35</color>
+    <color name="colorAccent">#4e2c18</color>
+
+    <color name="colorSelected">#402413</color>
+    <color name="colorTips">#af696969</color>
+    <color name="colorSecondText">#414040</color>
+    <color name="readThemeBrown">#e6dbbf</color>
+
+    <color name="reader_menu_bg_color">#191919</color>
+    <color name="read_theme_white">#ffffff</color>
+    <color name="read_theme_green">#bed0cf</color>
+    <color name="read_theme_yellow">#e6dbbf</color>
+    <color name="read_theme_gray">#AAAAAA</color>
+    <color name="read_theme_night">#000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#DE6014</color>
+    <color name="gray">#b8b8b8</color>
+    <color name="green">#5FB236</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="light_white">#EEEEEE</color>
+    <color name="light_black">#515151</color>
+    <color name="light_pink">#fb9090</color>
+    <color name="light_coffee">#A58D5E</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="light_red">#EC4A48</color>
+    <color name="light_blue">#039BE5</color>
+    <color name="dark_red">#B93221</color>
+
+    <!--章节内容夜间颜色-->
+    <color name="chapter_content_night">#696969</color>
+    <!--章节内容白天颜色-->
+    <color name="chapter_content_day">#080808</color>
+    <!--一级标题-->
+    <color name="first_title">#080808</color>
+    <!--二级标题-->
+    <color name="second_title">#696969</color>
+
+    <color name="second_background">#f1f1f1</color>
+
+    <color name="normal_background">#FFFFFFFF</color>
+</resources>

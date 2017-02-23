@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:paddingEnd="10dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_recommbooks_pic"
+        android:src="@mipmap/cover_default"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="19sp"
+        android:textColor="@color/first_title"
+        android:text="叮！恭喜你发现史诗级豪华书单"
+        android:ellipsize="end"
+        android:id="@+id/tv_recommbooks_title"
+        android:layout_toRightOf="@id/iv_recommbooks_pic"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/second_title"
+        android:text="人闲"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_recommbooks_name"
+        android:layout_toRightOf="@id/iv_recommbooks_pic"
+        android:layout_below="@id/tv_recommbooks_title"/>
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/iv_recommbooks_pic"
+        android:layout_below="@id/tv_recommbooks_name"
+        android:ellipsize="end"
+        android:textColor="@color/second_title"
+        android:id="@+id/tv_recommbooks_descri"
+        android:text="从一顿垃圾里找出的神作，本人混迹各种书吧，起点，天涯，明月，追书，_(:зゝ∠)_"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/second_title"
+        android:layout_below="@id/tv_recommbooks_descri"
+        android:layout_toRightOf="@id/iv_recommbooks_pic"
+        android:id="@+id/tv_recommbooks_totalnum"
+        android:text="共230本书 |"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/second_title"
+        android:layout_toRightOf="@id/tv_recommbooks_totalnum"
+        android:layout_below="@id/tv_recommbooks_descri"
+        android:id="@+id/tv_recommbooks_collecnum"
+        android:text=" 1235555人收藏"/>
+
+
+</RelativeLayout>

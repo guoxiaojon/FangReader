@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/normal_background"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginEnd="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/avatar_default"
+        android:id="@+id/iv_discussiondetail_hotcomments_item_pic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/second_title"
+        android:text="第151楼"
+        android:layout_toRightOf="@id/iv_discussiondetail_hotcomments_item_pic"
+        android:id="@+id/tv_discussiondetail_hotcomments_item_floor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_coffee"
+        android:text="吾乃常山孙三炮"
+        android:layout_marginStart="5dp"
+        android:id="@+id/tv_discussiondetail_hotcomments_item_name"
+        android:layout_toRightOf="@id/tv_discussiondetail_hotcomments_item_floor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_coffee"
+        android:text="lv.6"
+        android:layout_toRightOf="@id/tv_discussiondetail_hotcomments_item_name"
+        android:id="@+id/tv_discussiondetail_hotcomments_item_rank"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_discussiondetail_hotcomments_item_approve"
+        android:text="❤81次同感"
+        android:textColor="@color/second_title"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/first_title"
+        android:layout_marginTop="10dp"
+        android:text="14楼是两小时前发的"
+        android:id="@+id/tv_discussiondetail_hotcomments_item_content"
+        android:layout_below="@id/tv_discussiondetail_hotcomments_item_name"
+        android:layout_toRightOf="@id/iv_discussiondetail_hotcomments_item_pic"/>
+
+
+</RelativeLayout>
